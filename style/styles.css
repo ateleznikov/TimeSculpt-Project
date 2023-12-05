@@ -11,3 +11,15 @@
     height:8em;
     width:7em;
 }
+#account-icon{
+    margin-right: 1em;
+}
+.carousel-item img {
+    max-width: 30em;
+    max-height: 30em;
+    object-fit: cover; 
+}
+#carouselExampleDark {
+    height: 35em;
+  }
+
