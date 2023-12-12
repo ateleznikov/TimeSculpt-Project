@@ -11,8 +11,12 @@
     height:8em;
     width:7em;
 }
-#account-icon{
+#top-icons{
+    display: flex;
     margin-right: 1em;
+}
+#account-icon{
+    margin-right: 0.5em;
 }
 .carousel-item img {
     max-width: 30em;
