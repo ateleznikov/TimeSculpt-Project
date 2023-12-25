@@ -27,3 +27,15 @@
     height: 35em;
   }
 
+h1{
+    text-align: center;
+    padding-top: 1em;
+}
+.watchCard{
+    border: 1px  solid #093312;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+.watchCard:hover {
+    transform: scale(1.02);
+  }
