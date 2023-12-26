@@ -31,12 +31,37 @@ h1{
     text-align: center;
     padding-top: 1em;
 }
+#abou-us p{
+    padding-right: 10em;
+    padding-left: 10em;
+}
+#faq p{
+    padding-right: 10em;
+    padding-left: 10em;
+}
 .watchCard{
     max-width: 25em;
-    border: 1px  solid #093312;
+    border: 2.5px  solid #093312;
     border-radius: 20px;
     transition: transform 0.3s ease-in-out;
 }
 .watchCard:hover {
     transform: scale(1.02);
   }
+#about-us-images{
+    display: flex;
+    justify-content: space-between;
+    margin: 3em 10em;
+}
+#about-us-images img{
+    width: 30%;
+    height: auto;
+}
+#contact-form-window{
+    padding-top: 4em;
+    padding-bottom: 4em;
+}
+h2{
+    text-align: center;
+    padding-top: 1em;
+}
