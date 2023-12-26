@@ -32,8 +32,9 @@ h1{
     padding-top: 1em;
 }
 .watchCard{
+    max-width: 25em;
     border: 1px  solid #093312;
-    border-radius: 10px;
+    border-radius: 20px;
     transition: transform 0.3s ease-in-out;
 }
 .watchCard:hover {
