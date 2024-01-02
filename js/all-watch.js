@@ -32,8 +32,9 @@ async function fetchWatchesData() {
         watchCard.innerHTML = `
           <h2>${watch.name}</h2>
           <p>${watch.brand}</p>
-          <p>${watch.description}</p>
           <img src="${watch.image}" alt="${watch.name}" style="max-width: 200px; max-height: 200px; object-fit: cover; ">
+          <p class = "pt-2">${watch.price}</p>
+          <a href="#" class="btn btn-light addtocart mb-2" id="addtocart">Add to Cart</a>
         `;
 
         watchCard.addEventListener('mouseenter', () => {
@@ -44,6 +45,9 @@ async function fetchWatchesData() {
             watchCard.classList.remove('hovered');
           });
 
+        const addtocart = watchCard.querySelector('.addtocart');
+        addtocart.addEventListener("click", addToCart);
+
         watchContainer.appendChild(watchCard);
   
         watchCount++;
@@ -52,6 +56,7 @@ async function fetchWatchesData() {
           w100.classList.add('w-100');
           watchContainer.appendChild(w100);
         }
+        
       });
     } catch (error) {
       console.error('Error displaying watches:', error);
@@ -59,3 +64,10 @@ async function fetchWatchesData() {
   }
   
   document.addEventListener('DOMContentLoaded', displayWatches);
+
+function addToCart() {
+  var total = localStorage.getItem('checkout');
+  total++;
+  localStorage.setItem('checkout', total);
+  document.querySelector('#checkout').innerHTML = total;
+}

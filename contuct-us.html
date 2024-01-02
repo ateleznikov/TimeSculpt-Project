@@ -10,53 +10,60 @@
     <title>Time Sculpt | Watch Shop</title>
 </head>
 <body>
-    <section class="page-top">
-      <div id="on-top">
+  <section class="page-top">
+    <div id="on-top">
         <img src="img\logo.png" alt="logo" id="logo">
         <form class="d-flex" role="search" style = "width: 50em">
             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
             <button type="submit" class="btn btn-light">Search</button>
         </form>
         <div id="top-icons">
-          <svg id="account-icon" xmlns="http://www.w3.org/2000/svg" height="38" fill="#093312" class="bi bi-person-circle" viewBox="0 0 16 16">
-            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
-            <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
-          </svg>
-          <svg xmlns="http://www.w3.org/2000/svg" height="35" fill="#093312" class="bi bi-bag" viewBox="0 0 16 16">
-            <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z"/>
-          </svg>
+          <a style="text-decoration: none; color: #093312;" id="loginlogout" href="login.html">Login</a>
+
+          <a id="userdetails" href="user-details.html">
+            <svg id="account-icon" xmlns="http://www.w3.org/2000/svg" height="38" fill="#093312" class="bi bi-person-circle" viewBox="0 0 16 16">
+              <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+              <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
+            </svg>
+          </a>
+          
+          <a class="nav-item nav-link" href="checkout.html">
+            <button type="button" class="btn ">
+              Checkout <span style="color: #093312;" class="badge badge-light" id="checkout"></span>
+            </button>
+          </a>
         </div>
     </div>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-          <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
-              <ul class="navbar-nav">
-                <li class="nav-item">
-                  <a class="nav-link" href="index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="aboutus.html">About Us</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link active" href="#">Contact Us</a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Shop
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="shop-man.html">Man</a></li>
-                    <li><a class="dropdown-item" href="#">Woman</a></li>
-                  </ul>
-                </li>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="aboutus.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contuct-us.html">Contact Us</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Shop
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="shop-man.html">Man</a></li>
+                <li><a class="dropdown-item" href="shop-woman.html">Woman</a></li>
               </ul>
-            </div>
-          </div>
-        </nav>
-    </section>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+</section>
     <section id="contact-form-window">
         <div class="container">
             <div class="row justify-content-center">
@@ -109,7 +116,7 @@
       </footer>
     </div>
 
-
-
+<script src="js/login.js" ></script>
+<script src="js/custom.js"></script>
 </body>
 </html>

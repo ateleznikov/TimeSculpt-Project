@@ -64,48 +64,68 @@
           </div>
         </nav>
     </section>
-    <section id="carousel">
-      <div id="carouselExampleDark" class="carousel carousel-dark slide">
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
-          </div>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <!-- I added another div for carousel pictures to set a position and size to images and to edit them in CSS  -->
-                <div class="d-flex justify-content-center align-items-center">
-                    <img src="img\COSMOGRAPH-DAYTONA.jpg" class="d-block w-100"  alt="Rolex Cosmograpg Daytona">
-                </div>
-            </div>
-            <div class="carousel-item">
-                <div class="d-flex justify-content-center align-items-center">
-                    <img src="img\audemars-piguet-royal-oak.jpg" class="d-block w-100" alt="Audemars Piguet Royal Oak">
-                </div>
-            </div>
-            <div class="carousel-item">
-                <div class="d-flex justify-content-center align-items-center">
-                    <img src="img\cartier-santos.jpg" class="d-block w-100" alt="Cartire Santos">
-                </div>
-            </div>
+    <section id="checkout">
+        <div class="container">
+            <h1 class="text-center my-4">Checkout</h1>
+            <div class="row justify-content-center">    
+                <div class="col-sm col-md-4 gx-5"> 
+                    <form name="checkout" id="user-checkout" action="" method="get">
+                        <fieldset>
+                            <legend>Delivery Details</legend>
+                            <div class="form-group">
+                                <label for="getFirstName">First name</label>
+                                <input type="text" class="form-control" id="getFirstName" name="firstname" value="firstname" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="getLastName">Last name</label> 
+                                <input type="text" class="form-control" id="getLastName" name="lastname" value="surname" required>
+                            </div>    
+                            <div class="form-group">
+                                <label for="getAddress1">Addresss</label> 
+                                <input type="text" class="form-control" id="getAddress1" name="address2" value="address 1" required>
+                            </div> 
+                            <div class="form-group">
+                                <label for="getAddress2">Addresss</label> 
+                                <input type="text" class="form-control" id="getAddress2" name="address2"  value="address 2"  required>
+                            </div> 
+                            <div class="form-group">
+                                <label for="getAddress3">Addresss</label> 
+                                <input type="text" class="form-control" id="getAddress3" name="address3"  value="address 3"  required>
+                            </div> 
+                        </fieldset>    
+                        <fieldset>
+                            <legend>Payment Details</legend>
+                            <div class="form-group">
+                                <label for="getCardName">Card Name</label> 
+                                <input type="text" class="form-control" id="cardName" name="cardname" value="MR FIRSTNAME SURNAME" required>
+                            </div>   
+                            <div class="form-group">
+                                <label for="getCardNumber">Card Number</label> 
+                                <input type="text" class="form-control" id="cardNumber" name="cardNumber" value="1234 5678 9102 3456" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="getCardCVC">CVC</label> 
+                                <input type="password" class="form-control" id="cardCvv" name="cardCvv"  required>
+                            </div>
+                        </fieldset>    
+                        <div class="alert alert-success d-none mb-3" id="payment-success" role="alert">
+                            Thank you for your purchase. You will receive delivery details via email. Please return to our <a href="shop.html">Shopping Page</a>.
+                        </div>
+                        <div class="alert alert-danger d-none mb-3" id="payment-failure" role="alert">
+                          There seems to be a problem with the card details you entered.
+                        </div>                
+                        <div class="mt-3 form-group">
+                            <input type='submit' class="btn btn-light " id="buy-now" name="buy-now" value="Buy Now">
+                        </div>
+                    </form>
+                </div> 
+            </div>   
         </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div>
-    </section>
-    <section id="watch-grid">
-      <div class="row d-flex justify-content-between" id="watchContainer" style="margin-left: 5em; margin-right: 5em;">
-      </div>
+    
     </section>
     <div class="container">
       <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-        <p class="col-md-4 mb-0 text-muted">&copy; 2023 Time Sculpt, Inc</p>
+        <p class="col-md-4 mb-0 p-0 text-muted">&copy; 2023 Time Sculpt, Inc</p>
         <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
           <img src="img/logo.png" alt="" style="max-width: 50px; max-width: 50px;">
         </a>
@@ -119,7 +139,7 @@
     </div>
 
 <script src="js/login.js" ></script>
-<script src="js/home-page-watch.js"></script>
+<script src="js/check-out.js"></script>
 <script src="js/custom.js"></script>
 </body>
 </html>

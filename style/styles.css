@@ -13,10 +13,8 @@
 }
 #top-icons{
     display: flex;
-    margin-right: 1em;
-}
-#account-icon{
-    margin-right: 0.5em;
+    align-items: center;
+    gap: 1em;
 }
 .carousel-item img {
     max-width: 30em;
